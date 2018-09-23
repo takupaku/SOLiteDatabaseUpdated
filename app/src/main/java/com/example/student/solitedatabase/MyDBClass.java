@@ -93,6 +93,7 @@ public class MyDBClass extends SQLiteOpenHelper {
         SQLiteDatabase database = getReadableDatabase();
         String sql= "select * from "+ TABLE_NAME+ " where id = "+ id;
         return  database.rawQuery(sql, null);
+        //done
 
     }
 
