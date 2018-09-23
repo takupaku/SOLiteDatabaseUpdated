@@ -41,9 +41,20 @@
         android:id="@+id/etArea"/>
 
 
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Area"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:weightSum="2"
+        android:weightSum="4"
         android:layout_height="wrap_content">
 
         <Button
@@ -61,7 +72,33 @@
             android:onClick="viewData"
             android:text="view"
             android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="updateData"
+            android:text="updat" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="Delete"
+            android:text="delete" />
+
+
     </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="search"
+        android:text="search" />
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
